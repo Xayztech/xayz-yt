@@ -1,0 +1,44 @@
+{
+  "name": "xayz-yt",
+  "version": "1.0.0",
+  "description": "Universal YouTube Downloader, Search & Play Engine. Supports Node.js (CJS/ESM) and Browser.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "browser": "./dist/index.global.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "youtube",
+    "downloader",
+    "search",
+    "play",
+    "music",
+    "video",
+    "scraper",
+    "api"
+  ],
+  "author": "XYCoolcraft",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "yt-search": "^2.10.4"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
